@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LaunchPad by Hustle Launch.
 
-## Getting Started
+LaunchPad proposes to be the premier framework with boilerplare built-in for creating new websites, web apps, and sales landers.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Collect leads with robust shadcn forms.
+- Send email notifications with resend.
+- store lead information in a convex database.
+- view and reply to leads from your dashboard.
+- analyze traffic with posthog.
+- handle auth, create users, roles and groups with clerk + convex.
+- track and debug errors with sentry.
+- deploy your build on netlify, vercel, or any other modern hosting provider.
+- accept one-time and recurring payments with stripe.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js 15
+- React 19
+- Tailwind
+- Convex
+- Clerk
+- Stripe
+- Posthog
+- Sentry
+- Resend
+- React Email
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## Performance
 
-To learn more about Next.js, take a look at the following resources:
+Borrows best practices and hacks from NextFaster.
+Leverages bun and turbopack for faster builds.
+[ ] Planned research into rolldown for bundling in the future.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Contributions are welcome! Please open an issue or submit a pull request.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+MIT
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[Hustle Launch](https://www.hustlelaunch.com)
+[Official Website](https://launchpad.hustlelaunch.com)
+[Pro version](https://launchpad.hustlelaunch.com/pro)
