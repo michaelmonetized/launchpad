@@ -14,8 +14,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Launchpad",
-  description: "Hustle Launch Launchpad boilerplate",
+  metadataBase: new URL("https://launchpad.hustlelaunch.com"),
+  title: "LaunchPad — Hustle Launch starter",
+  description:
+    "The Hustle Launch starter kit. Next.js, shadcn, Clerk, Convex, PostHog, Stripe, Resend. Providers are mounted. It is not a live product.",
+  openGraph: {
+    title: "LaunchPad — Hustle Launch starter",
+    description:
+      "The Hustle Launch starter kit. Providers are mounted. It is not a live product.",
+    url: "https://launchpad.hustlelaunch.com",
+    siteName: "LaunchPad",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

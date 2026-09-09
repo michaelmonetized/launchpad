@@ -1,48 +1,17 @@
-# LaunchPad by Hustle Launch.
+# LaunchPad by Hustle Launch
 
-LaunchPad proposes to be the premier framework with boilerplare built-in for creating new websites, web apps, and sales landers.
+The Hustle Launch starter. Not a live client portal. Not a premier framework.
 
-## Features
+Providers for Clerk, Convex, and PostHog are mounted in the root layout and
+no-op when keys are missing. Stripe, Resend, and Sentry are in the package.
+The dashboard in PLAN.md has not been built.
 
-- Collect leads with robust shadcn forms.
-- Send email notifications with resend.
-- store lead information in a convex database.
-- view and reply to leads from your dashboard.
-- analyze traffic with posthog.
-- handle auth, create users, roles and groups with clerk + convex.
-- track and debug errors with sentry.
-- deploy your build on netlify, vercel, or any other modern hosting provider.
-- accept one-time and recurring payments with stripe.
+**Host:** https://launchpad.hustlelaunch.com  
+**Hustle Launch:** https://www.hustlelaunch.com
 
-## Stack
+There is no `/pro` page.
 
-- Next.js 15
-- React 19
-- Tailwind
-- Convex
-- Clerk
-- Stripe
-- Posthog
-- Sentry
-- Resend
-- React Email
-
-
-## Performance
-
-Borrows best practices and hacks from NextFaster.
-Leverages bun and turbopack for faster builds.
-[ ] Planned research into rolldown for bundling in the future.
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
-
-## License
-
-MIT
-
-[Hustle Launch](https://www.hustlelaunch.com)
-[Official Website](https://launchpad.hustlelaunch.com)
-[Pro version](https://launchpad.hustlelaunch.com/pro)
-
+```bash
+bun install
+bun run dev
+```
