@@ -1,3 +1,5 @@
+"use client";
+
 import { ClerkProvider } from "@clerk/nextjs";
 
 export default function ClerkProviderWrapper({
@@ -5,5 +7,9 @@ export default function ClerkProviderWrapper({
 }: {
   children: React.ReactNode;
 }) {
-  return <ClerkProvider>{children}</ClerkProvider>;
+  const key = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
+  if (!key) {
+    return children;
+  }
+  return <ClerkProvider publishableKey={key}>{children}</ClerkProvider>;
 }
