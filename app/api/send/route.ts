@@ -1,9 +1,17 @@
 import { EmailTemplate } from "@/components/email-template";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST() {
+  const key = process.env.RESEND_API_KEY;
+  if (!key) {
+    return Response.json(
+      { error: "Resend is not configured" },
+      { status: 503 },
+    );
+  }
+
+  const resend = new Resend(key);
+
   try {
     const { data, error } = await resend.emails.send({
       from: process.env.NEXT_PUBLIC_RESEND_EMAIL || "notify@uncap.us",
